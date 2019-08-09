@@ -8,10 +8,10 @@ public class Spawner_Green : MonoBehaviour
     float randX;
     Vector2 Spawnpoint;
     public float spawnRate = 2f; // The amount of enemies spawn/sec.
-    float nextspawn = 0f; // Just a float variable to represent time/spawn of enemies.
+   /* float nextspawn = 0f;*/ // Just a float variable to represent time/spawn of enemies.
     private void Start()
     {
-        InvokeRepeating("SpawnEnemy", 10f, 5.5f);
+        InvokeRepeating("SpawnEnemy", 0.5f, 0.5f);
     }
     //private void Update()
     //{

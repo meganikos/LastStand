@@ -24,8 +24,11 @@ public class Countdown : MonoBehaviour
         if (Timer <= 0)
         {
 
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+       
+
+
 
     }
    
