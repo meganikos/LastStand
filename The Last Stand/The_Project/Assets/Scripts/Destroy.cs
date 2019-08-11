@@ -6,24 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class Destroy : MonoBehaviour
 {
-    public Text LoseText;
+    GameObject Boss;
    
     [SerializeField] private int startingHealth = 3;
 
     void Start()
     {
-        //LoseText.text = "";
+        
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
         
     }
-    private void loseText()
-    {
-        
-    }
+   
    
 
    private void OnTriggerEnter(Collider other)
@@ -34,16 +31,24 @@ public class Destroy : MonoBehaviour
             {
                 other.GetComponent<HarmGreen>().TakeDamage();  //Take 3 hits for green enemies
                 other.GetComponent<Explosion>().explode();    // Green enemies explode after they die
+                
             }
-            
-            
-            else 
+            if (other.name.Contains("Red"))
             {
-                other.GetComponent<HarmRed>().TakeDamage(); //Take 1 hit for red enemies
-                other.GetComponent<Explosion>().explode(); //Red enemies explode afetr they die
+                other.GetComponent<HarmRed>().TakeDamage();
+                other.GetComponent<Explosion>().explode();
 
             }
-            
+
+
+            if (other.name.Contains("Boss"))
+            {
+                other.GetComponent<HarmBoss>().TakeDamage(); 
+                other.GetComponent<Explosion>().explode(); 
+                
+
+            }
+
 
             Destroy(gameObject); // Destroy bullet after contact with enemy 
            

@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Destroy.cs" />
     <Compile Include="Assets\Scripts\Explosion.cs" />
     <Compile Include="Assets\Scripts\Fire.cs" />
+    <Compile Include="Assets\Scripts\HarmBoss.cs" />
     <Compile Include="Assets\Scripts\HarmGreen.cs" />
     <Compile Include="Assets\Scripts\HarmRed.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
