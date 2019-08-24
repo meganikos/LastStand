@@ -25,7 +25,7 @@ public class HarmBoss : MonoBehaviour
         if (startingHealth <= 0)
         {
             Destroy(gameObject);
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(5);
         }
 
 

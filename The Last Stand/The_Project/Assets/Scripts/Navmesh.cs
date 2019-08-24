@@ -24,7 +24,7 @@ public class Navmesh : MonoBehaviour
     void Update()
     {
        
-        if (target == null) // Stop acsess to navmesh + -> Mainmenu
+        if (target == null) // Stop acsess to navmesh + -> Mainmenu player destroyed
         {
             
             SceneManager.LoadScene(0);
