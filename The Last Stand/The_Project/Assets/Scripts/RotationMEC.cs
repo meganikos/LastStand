@@ -10,7 +10,7 @@ public class RotationMEC : MonoBehaviour
     
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.None;
         rb = GetComponent<Rigidbody>();
     }
 
